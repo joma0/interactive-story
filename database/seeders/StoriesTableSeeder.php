@@ -14,11 +14,11 @@ class StoriesTableSeeder extends Seeder
     public function run(): void
     {
         Story::create([
-            'title' => "Histoire 1"
+            'title' => "Dans la grotte"
         ]);
 
         Story::create([
-            'title' => "Histoire 2"
+            'title' => "Dans l'espace"
         ]);
     }
 }

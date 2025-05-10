@@ -17,21 +17,21 @@ class ChaptersTableSeeder extends Seeder
             'story_id' => 1,
             'number' => 1,
             'version' => 'A',
-            'text' => 'Ceci est le premier chapitre de la première histoire.'
+            'text' => 'Vous vous réveillez.'
         ]);
 
         Chapter::create([
             'story_id' => 1,
             'number' => 2,
             'version' => 'A',
-            'text' => 'Ceci est le deuxième chapitre de la première histoire.'
+            'text' => 'Vous avancez par petits pas.'
         ]);
 
         Chapter::create([
             'story_id' => 2,
             'number' => 1,
             'version' => 'A',
-            'text' => 'Ceci est le premier chapitre de la deuxième histoire.'
+            'text' => 'Vous vous réveillez dans une obscurité totale.'
         ]);
     }
 }
