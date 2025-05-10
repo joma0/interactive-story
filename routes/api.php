@@ -11,16 +11,16 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-Route::apiResource('stories', StoryController::class);
+Route::apiResource('v1/stories', StoryController::class);
 
-Route::apiResource('chapters', ChapterController::class);
+Route::apiResource('v1/chapters', ChapterController::class);
 
-Route::apiResource('choices', ChoiceController::class);
+Route::apiResource('v1/choices', ChoiceController::class);
 
-Route::get('stories/{story}/chapters', function (App\Models\Story $story) {
+Route::get('v1/stories/{story}/chapters', function (App\Models\Story $story) {
     return response()->json($story->chapters);
 });
 
-Route::get('chapters/{chapter}/choices', function (\App\Models\Chapter $chapter) {
+Route::get('v1/chapters/{chapter}/choices', function (\App\Models\Chapter $chapter) {
     return response()->json($chapter->originChoices);
 });
